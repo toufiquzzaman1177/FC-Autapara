@@ -1,0 +1,312 @@
+:root {
+    --deep-green: #154e1b;
+    --light-green: #8dec8d;
+    --white: #FFFFFF;
+    --black: #000000;
+    --gray: #F0F0F0;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+}
+
+body {
+    background-color: var(--gray);
+    color: var(--black);
+}
+
+header {
+    background-color: var(--deep-green);
+    color: var(--white);
+    padding: 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+}
+
+.logo-container {
+    display: flex;
+    align-items: center;
+}
+
+.logo {
+    width: 60px;
+    height: 60px;
+    margin-right: 1rem;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+}
+
+nav ul li {
+    margin-left: 1.5rem;
+}
+
+nav ul li a {
+    color: var(--white);
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+nav ul li a:hover, nav ul li a.active {
+    color: var(--light-green);
+}
+
+.container {
+    max-width: 1200px;
+    margin: 2rem auto;
+    padding: 0 1rem;
+    min-height: 70vh;
+}
+
+.hero {
+    background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('../images/fc cover.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 450px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: var(--white);
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.hero-content h1 {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+}
+
+.btn {
+    display: inline-block;
+    background-color: var(--deep-green);
+    color: var(--white);
+    padding: 0.8rem 1.5rem;
+    border: none;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+    margin-top: 1rem;
+    transition: background-color 0.3s;
+    cursor: pointer;
+}
+
+.btn:hover {
+    background-color: var(--light-green);
+    color: var(--black);
+}
+
+.sports-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 1.5rem;
+    margin: 2rem 0;
+}
+
+.sport-card {
+    background-color: var(--white);
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    transition: transform 0.3s;
+}
+
+.sport-card:hover {
+    transform: translateY(-5px);
+}
+
+.sport-card img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+}
+
+.sport-card h3 {
+    padding: 1rem;
+    text-align: center;
+    background-color: var(--deep-green);
+    color: var(--white);
+}
+
+footer {
+    background-color: var(--deep-green);
+    color: var(--white);
+    text-align: center;
+    padding: 2rem 0;
+    margin-top: 2rem;
+   font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+/* Form Styles */
+.form-container {
+    max-width: 500px;
+    margin: 2rem auto;
+    background-color: var(--white);
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.form-container h2 {
+    color: var(--deep-green);
+    margin-bottom: 1.5rem;
+    text-align: center;
+}
+
+.form-group {
+    margin-bottom: 1.5rem;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 0.5rem;
+    font-weight: bold;
+}
+
+.form-group input, .form-group select {
+    width: 100%;
+    padding: 0.8rem;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+/* Trophies Page Styles */
+.trophy-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 2rem;
+}
+
+.trophy-card {
+    background-color: var(--white);
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.trophy-card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.trophy-info {
+    padding: 1.5rem;
+}
+
+.trophy-info h3 {
+    color: var(--deep-green);
+    margin-bottom: 0.5rem;
+}
+
+/* Players Page Styles */
+.player-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 2rem;
+    background-color: var(--white);
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.player-table th, .player-table td {
+    padding: 1rem;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+
+.player-table th {
+    background-color: var(--deep-green);
+    color: var(--white);
+}
+
+.player-table tr:hover {
+    background-color: #f5f5f5;
+}
+
+/* Tournament Page Styles */
+.tournament-card {
+    background-color: var(--white);
+    border-radius: 8px;
+    padding: 1.5rem;
+    margin-bottom: 1.5rem;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.tournament-card h3 {
+    color: var(--deep-green);
+    margin-bottom: 0.5rem;
+}
+
+.tournament-details {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 1rem;
+}
+
+.detail-item {
+    flex: 1 1 200px;
+    margin-right: 1rem;
+    margin-bottom: 1rem;
+}
+
+.detail-item strong {
+    display: block;
+    color: var(--deep-green);
+    margin-bottom: 0.3rem;
+}
+
+/* Association Page Styles */
+.association-info {
+    background-color: var(--white);
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    margin-bottom: 2rem;
+}
+
+.association-info h2 {
+    color: var(--deep-green);
+    margin-bottom: 1rem;
+}
+
+.committee-members {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 1.5rem;
+}
+
+.member-card {
+    background-color: var(--white);
+    border-radius: 8px;
+    padding: 1.5rem;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    text-align: center;
+}
+
+.member-card img {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 1rem;
+    border: 3px solid var(--deep-green);
+}
+
+.member-card h3 {
+    color: var(--deep-green);
+    margin-bottom: 0.5rem;
+}
+
+
+
+
+/*turnament  start*/
+      
+       

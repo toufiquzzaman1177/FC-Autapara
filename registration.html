@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration - Champion's Arena</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header>
+        <div class="logo-container">
+            <img src="images/fclogo.png" alt="Champion's Arena Logo" class="logo">
+            <h1>Friends Club Of Autapara</h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="registration.html" class="active">Register</a></li>
+                <li><a href="login.html">Login</a></li>
+                
+            </ul>
+        </nav>
+    </header>
+    
+    <div class="container">
+        <div class="form-container">
+            <h2>Register for <br> Friends Club Of Autapara</h2>
+            <form id="registerForm" action="register.php" method="POST">
+                <div class="form-group">
+                    <label for="fullName">Full Name</label>
+                    <input type="text" id="fullName" name="fullName" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="phone">Phone Number</label>
+                    <input type="tel" id="phone" name="phone" required>
+                </div>
+                <div class="form-group">
+                    <label for="dob">Date of Birth</label>
+                    <input type="date" id="dob" name="dob" required>
+                </div>
+                <div class="form-group">
+                    <label for="sport">Primary Sport Interest</label>
+                    <select id="sport" name="sport" required>
+                        <option value="">Select a sport</option>
+                        <option value="cricket">Cricket</option>
+                        <option value="football">Football</option>
+                        <option value="badminton">Badminton</option>
+                        <option value="chess">Chess</option>
+                        <option value="carrom">Carrom</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="password">Password</label>
+                    <input type="password" id="password" name="password" required>
+                </div>
+                <div class="form-group">
+                    <label for="confirmPassword">Confirm Password</label>
+                    <input type="password" id="confirmPassword" name="confirmPassword" required>
+                </div>
+                <button type="submit" class="btn">Register</button>
+            </form>
+            <p style="text-align: center; margin-top: 1rem;">Already have an account? <a href="login.html">Login here</a></p>
+        </div>
+    </div>
+    
+    <footer>
+        <p>&copy; 2025 Friends Club Of Autapara. All Rights Reserved.</p>
+        <p><i>Design & Devoloped By: FC Autapara</i></p>
+    </footer>
+    
+    <script src="js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login - Champion's Arena</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header>
+        <div class="logo-container">
+            <img src="images/fclogo.png" alt="Champion's Arena Logo" class="logo">
+            <h1>Friends Club Of Autapara</h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="registration.html">Register</a></li>
+                <li><a href="login.html" class="active">Login</a></li>
+                 <li><a href="trophies.html">Trophies</a></li>
+                <li><a href="association.html">Association</a></li>
+                <li><a href="players.html">Players</a></li>
+                <li><a href="tournaments.html" class="active">Tournaments</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <div class="container">
+        <div class="form-container">
+            <h2>Login to <br>
+                Friends Club Of Autapara</h2>
+            <form id="loginForm" action="login.php" method="POST">
+                <div class="form-group">
+                    <label for="loginEmail">Email</label>
+                    <input type="email" id="loginEmail" name="loginEmail" required>
+                </div>
+                <div class="form-group">
+                    <label for="loginPassword">Password</label>
+                    <input type="password" id="loginPassword" name="loginPassword" required>
+                </div>
+                <button type="submit" class="btn">Login</button>
+            </form>
+            <p style="text-align: center; margin-top: 1rem;">Don't have an account? <a href="registration.html">Register here</a></p>
+        </div>
+    </div>
+    
+    <footer>
+        <p>&copy; 2025 Friends Club Of Autapara. All Rights Reserved.</p>
+       <p><i>Design & Devoloped By: FC Autapara </i></p>
+    </footer>
+    
+   
+</body>
+</html>

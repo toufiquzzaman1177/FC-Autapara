@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tournaments - Champion's Arena</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header>
+        <div class="logo-container">
+            <img src="images/fclogo.png" alt="Champion's Arena Logo" class="logo">
+            <h1>Friends Club Of Autapara</h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="registration.html">Register</a></li>
+                <li><a href="login.html">Login</a></li>
+                <li><a href="trophies.html">Trophies</a></li>
+                <li><a href="association.html">Association</a></li>
+                <li><a href="players.html">Players</a></li>
+                <li><a href="tournaments.html" class="active">Tournaments</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <div class="container">
+        <h2>Tournaments & Events</h2>
+        <p>Check out our achievements past across all sports.</p>
+        
+        <div style="margin: 1rem 0;">
+            <label for="tournamentFilter">Filter by Status:</label>
+            <select id="tournamentFilter">
+                <option value="all">All Tournaments</option>
+                <option value="upcoming">Upcoming</option>
+                <option value="ongoing">Ongoing</option>
+                <option value="completed">Completed</option>
+            </select>
+        </div>
+
+       
+        
+        <div id="tournamentsContainer">
+            <!-- Tournaments will be loaded via JavaScript -->
+        </div>
+    </div>
+    
+    <footer>
+        <p>&copy; 2024 Friends Club Of Autapara. All Rights Reserved.</p>
+         <p><i>Design & Devoloped By: FC Autapara</i></p>
+    </footer>
+    
+    <script src="js/main.js"></script>
+    <script src="js/tournaments.js"></script>
+</body>
+</html>
