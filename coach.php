@@ -59,7 +59,7 @@ $result = $conn->query($sql);
                 <nav>
                     <ul>
                         <li><a href="home.php">Home</a></li>
-                        <li><a href="registration.html">Registration</a></li>
+                        <li><a href="registration.php">Registration</a></li>
                         <li><a href="#login">Login</a></li>
                     </ul>
                 </nav>
