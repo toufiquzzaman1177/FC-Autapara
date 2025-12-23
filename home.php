@@ -149,7 +149,7 @@
 
     <footer>
         <div class="container">
-            <p>&copy; 2025 Friends Club Of Autapara. All rights reserved.</p>
+            <p>&copy; 2026 Friends Club Of Autapara. All rights reserved.</p>
             <p style="font-size: 10px; color: rgb(54, 188, 6)"><i>Design & Devoloped By: FC Autapara</i></p>
         </div>
     </footer>
